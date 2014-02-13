@@ -142,47 +142,5 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 </div>   
 	<!-- End Contact -->  
 	</div>
-<script>
-$(function () {
-    $(window).scroll(function(){
-    // global scroll to top button
-        if ($(this).scrollTop() > 300) {
-            $('.scrolltop').fadeIn();
-        } else {
-            $('.scrolltop').fadeOut();
-        }        
-    });
-    
-    // scroll nav
-    $('.scroller').click(function(){
-    	var section = $($(this).data("section"));
-    	var top = section.offset().top-82;
-        $("html, body").animate({ scrollTop: top }, 700);
-        return false;
-    });
-
-	    	    
-    // For the purpose of the demo this allows you to toggle the background between video and img
-    $('.toggle_video').click(function(){
-	    
-	   $('#big-video-wrap').fadeToggle();
-	   return false; 
-	    
-    });
-    
-	// BigVideo Setup
-    var BV = new $.BigVideo({useFlashForFirefox:false});
-	BV.init();
-    if (Modernizr.touch) {
-    	// fallback image for mobile devices
-        BV.show('assets/img/bg2.jpg');
-    } else {
-        BV.show('assets/video/SNEbackground2_C.mp4',
-        {ambient:true, doLoop:true, altSource:'assets/video/SNEbackground2_C.ogv'});
-    }   
-    
-            
-});
-</script>
 
 <div style="display: none;" id="big-video-control-container"><div id="big-video-control"><a href="#" id="big-video-control-play"></a><div id="big-video-control-middle"><div id="big-video-control-bar"><div id="big-video-control-bound-left"></div><div style="width: 72.8241%;" id="big-video-control-progress"></div><div class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" id="big-video-control-track"><a style="left: 72.32%;" class="ui-slider-handle ui-state-default ui-corner-all" href="#"></a></div><div id="big-video-control-bound-right"></div></div></div><div id="big-video-control-timer">0:11/0:16</div></div></div></body></html>
