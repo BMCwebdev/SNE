@@ -2,11 +2,11 @@
 <html><head>
 <meta http-equiv="content-type" content="text/html; charset=windows-1252">
     <title>Samad Namaad Entertainment</title>
-<!--     <script src="support_files/video.js"></script> -->
+    <script src="support_files/video.js"></script>
     <link href="support_files/css.css" rel="stylesheet" type="text/css">
     <link href="support_files/css_002.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="support_files/bootstrap.js"></script> 
-<!--     <script src="support_files/bigvideo.js"></script>  -->
+    <script src="support_files/bigvideo.js"></script> 
     <link href="support_files/bootstrap.css" rel="stylesheet">
     <link href="support_files/bootstrap-responsive.css" rel="stylesheet">
     <link href="support_files/main.css" rel="stylesheet">    
@@ -14,10 +14,6 @@
   	<script src="support_files/jquery_002.js"></script>
 	<script type="text/javascript" src="support_files/bootstrap.js"></script> 
 
-  <script src="support_files/video.js"></script>
-  <script>
-    videojs.options.flash.swf = "support_files/video-js.swf";
-  </script>
 
 
   <!-- IE Fix for HTML5 Tags -->
@@ -38,43 +34,14 @@ html {
 	
 }
 */
-
-#video {
-    position: absolute;
-	background: none repeat scroll 0 0 #000000;
-    left: 50%;
-    margin-left: -35%;
-    width: 70%;
-    margin-top: 100px;
-}
 </style>
 </head>
 
 <body>
 
-<!--
 <div id="movie">
 <div id="big-video-wrap"><div style="width: 1635.56px; height: 920px; display: block; top: 0px; left: -87.7778px;" height="150" width="300" class="video-js vjs-default-skin vjs-playing" id="big-video-vid"><video src="support_files/countdown.ogv" poster="null" autoplay="autoplay" style="position: absolute; width: 1635.56px;" id="big-video-vid_html5_api" class="vjs-tech" preload="auto" data-setup="{}" webkit-playsinline=""></video></div></div>
 </div>
--->
-
-<video autoplay poster="assets/img/countdownposter.png" id="video">
-    <source src="support_files/countdown.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' >
-    <source src="support_files/countdown.ogv" type='video/ogg;' />
-    Video not supported.
-</video>
-
-<!-- RETURN TO POSTER FRAME -->
-<script>
-var vid=document.getElementById('video');
-vid.addEventListener("ended", resetVideo, false);
-
-function resetVideo() {
-    // resets the video element by resetting the source
-    this.src = this.src
-}
-</script>
-<!-- END RETURN TO POSTER FRAME -->   
 
   <!-- Navbar -->
 	<div class="navbar navbar-fixed-top">
@@ -126,6 +93,48 @@ function resetVideo() {
 </div>
      <!-- ends About -->
      
+      <!-- #team -->    
+<!--
+<div class="container-fluid" id="team">
+	<div class="container dark">
+		<h1>The Films</h1>
+			<ul class="thumbnails">
+			  <li class="span3">
+			    <div class="thumbnail">
+			      <img alt="" src="assets/img/mqdefault.png">
+			      <h3>The Killer Chef</h3>
+			      <p>Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate</p>
+			    </div>
+			  </li>
+			
+			  <li class="span3">
+			    <div class="thumbnail">
+			      <img alt="" src="assets/img/mqdefault1.png">
+			      <h3>I Know What You Did</h3>
+			      <p>Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate</p>
+			    </div>
+			  </li>
+			  
+			  <li class="span3">
+			    <div class="thumbnail">
+			      <img alt="" src="assets/img/mqdefault2.png">
+			      <h3>Dr. Strangecook</h3>
+			      <p>Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate</p>
+			    </div>
+			  </li>
+			
+			  <li class="span3">
+			    <div class="thumbnail">
+			      <img alt="" src="assets/img/mqdefault3.png">
+			      <h3>Out of Witty Titles</h3>
+			      <p>Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate</p>
+			    </div>
+			  </li>
+			 </ul>
+		</div>
+	</div>
+-->
+      <!-- End Team -->  
        	
 	
       <!-- #contact -->   	

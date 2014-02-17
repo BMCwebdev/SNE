@@ -1,34 +1,80 @@
 <!DOCTYPE html>
-<html class=" js no-flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head>
+<html><head>
 <meta http-equiv="content-type" content="text/html; charset=windows-1252">
-    <title>SNE</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-    <meta name="description" content="Front Row Responsive One page Theme With Video Support built by Harkable.com">
-    <meta name="author" content="harkable.com"> 
-  	<script src="support_files/jquery_002.js"></script>
-  	<script>window.jQuery || document.write('<script src="assets/js/jquery-1.7.2.min.js"><\/script>')</script>
-    <script src="support_files/jquery-ui-1.js"></script>
-    <script src="support_files/jquery.js"></script>
-    <script src="support_files/video.js"></script>
-    <script src="support_files/modernizr-2.js"></script>
+    <title>Samad Namaad Entertainment</title>
+<!--     <script src="support_files/video.js"></script> -->
     <link href="support_files/css.css" rel="stylesheet" type="text/css">
     <link href="support_files/css_002.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="support_files/bootstrap.js"></script> 
-    <script src="support_files/bigvideo.js"></script> 
+<!--     <script src="support_files/bigvideo.js"></script>  -->
     <link href="support_files/bootstrap.css" rel="stylesheet">
     <link href="support_files/bootstrap-responsive.css" rel="stylesheet">
     <link href="support_files/main.css" rel="stylesheet">    
     <link href="support_files/custom.css" rel="stylesheet">    
+  	<script src="support_files/jquery_002.js"></script>
+	<script type="text/javascript" src="support_files/bootstrap.js"></script> 
+
+  <script src="support_files/video.js"></script>
+  <script>
+    videojs.options.flash.swf = "support_files/video-js.swf";
+  </script>
+
 
   <!-- IE Fix for HTML5 Tags -->
   <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->      
 <style type="text/css">
+html {
+	background-color: #000000;
+}
+/*
+#big-video-vid {
+	position: absolute;
+	width: 100%;
+	left:	50%;
+	margin-left: -50%;
+	
+	
+}
+*/
 
+#video {
+    position: absolute;
+	background: none repeat scroll 0 0 #000000;
+    left: 50%;
+    margin-left: -35%;
+    width: 70%;
+    margin-top: 100px;
+}
 </style>
 </head>
-<body><div id="big-video-wrap"><div style="width: 1635.56px; height: 920px; display: block; top: 0px; left: -87.7778px;" height="150" width="300" class="video-js vjs-default-skin vjs-playing" id="big-video-vid"><video src="support_files/SNEbackground2_C.ogv" poster="null" autoplay="autoplay" style="position: absolute; width: 1635.56px;" id="big-video-vid_html5_api" class="vjs-tech" preload="auto" data-setup="{}" webkit-playsinline=""></video></div></div>
+
+<body>
+
+<!--
+<div id="movie">
+<div id="big-video-wrap"><div style="width: 1635.56px; height: 920px; display: block; top: 0px; left: -87.7778px;" height="150" width="300" class="video-js vjs-default-skin vjs-playing" id="big-video-vid"><video src="support_files/countdown.ogv" poster="null" autoplay="autoplay" style="position: absolute; width: 1635.56px;" id="big-video-vid_html5_api" class="vjs-tech" preload="auto" data-setup="{}" webkit-playsinline=""></video></div></div>
+</div>
+-->
+
+<video autoplay poster="assets/img/countdownposter.png" id="video">
+    <source src="support_files/countdown.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' >
+    <source src="support_files/countdown.ogv" type='video/ogg;' />
+    Video not supported.
+</video>
+
+<!-- RETURN TO POSTER FRAME -->
+<script>
+var vid=document.getElementById('video');
+vid.addEventListener("ended", resetVideo, false);
+
+function resetVideo() {
+    // resets the video element by resetting the source
+    this.src = this.src
+}
+</script>
+<!-- END RETURN TO POSTER FRAME -->   
 
   <!-- Navbar -->
 	<div class="navbar navbar-fixed-top">
@@ -39,42 +85,13 @@
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
           	</a>
-<!--
-          	<a class="brand scroller" data-section="html" href="http://wbpreview.com/previews/WB0L500N4/index.html">FRONT ROW</a>
+
 		  	<div class="nav-collapse collapse">
                 <ul class="nav pull-right">
-                  	<li><a href="#" class="toggle_video">Toggle Video Demo</a></li>
-                    <li><a href="#" class="scroller" data-section="#about">About</a></li>
-                    <li><a href="#" class="scroller" data-section="#team">The Team</a></li>
-                    <li><a href="#" class="scroller" data-section="#contact">Contact us</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            Dropdown
-                            <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Example Link</a></li>
-                            <li><a href="#">Example Link 2</a></li>
-                            <li><a href="#">Example Link 3</a></li>
-                        </ul>
-                    </li>
-                </ul>
-	        </div>
--->
-		  	<div class="nav-collapse collapse">
-                <ul class="nav pull-right">
-<!--                   	<li><a href="#" class="toggle_video">Samad Namaad</a></li> -->
+                    <li><a href="index.html"><img src="assets/img/navlogo2.png" style="height:60px; opacity:0.9; filter:alpha(opacity=90); margin-top:-20px;" /></a></li>
+                  	<li><a href="index.html" class="scroller">Home</a></li>
                   	<li><a href="buisnessman.html" class="scroller">Samad Namaad</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            Restaurants
-                            <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="tangierino.html" target="_blank"><img src="assets/img/tangierinomenu.png" style="height:45px;"/></a></li>
-                            <li><a href="koullshi.html" target="_blank"><img src="assets/img/koullshimenu.png"  style="height:45px;" /></a></li>
-                        </ul>
-                    </li>
+                  	<li><a href="Restaurants.html" class="scroller">Restaurants</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             Films
@@ -95,30 +112,11 @@
     <!-- end Navbar -->
     
     
-    <!-- #intro -->
-	<div class="main-container">
-		<div class="container-fluid" id="intro">	
-		<div class="container">	
-			<div class="row span6 center">
-			<img src="assets/img/logo.png" style="opacity:0.4; filter:alpha(opacity=40); height: 175px; position: relative; right: -350px;"/>
-<!-- 				<h1>SNE FILMS</h1> -->
-<!--
-				<p>Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur 
-vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, 
-ac egestas est urna sit.
-	</p>
-				<a href="#" class="btn btn-xlarge btn-purple">YouTube Page</a>
--->
-			</div>	
-		</div>
-	</div>
-    <!-- ends Intro -->
-    
-    <div style="postition:fixed;top:400px;color:blue;"><h3>temp using front page video until we have the movie to insert here.</h3></div>
+
     
      <!-- #about -->
 <div class="container-fluid" id="about" style="bottom: 76px;margin-left: auto;margin-right: auto;position: fixed;width: 100%;">
-		<div class="container light" style="padding:30px 30px 1px 30px  !important;">
+		<div class="container light" style="padding:0px 30px 1px 30px  !important;">
 		
 			<div><h1>Demon Shadow</h1>
 <p style="text-align:left;">Good versus evil is the underlying theme of Demon Shadow, played out in both real life and in the story.  In a classic confrontation of these two formidable forces, good must descend from evil itself in order to preserve its power, combat evil on its own terms in order to ultimately persevere.</p>
@@ -132,100 +130,15 @@ ac egestas est urna sit.
 </div>
      <!-- ends About -->
      
-      <!-- #team -->    
-<!--
-<div class="container-fluid" id="team">
-	<div class="container dark">
-		<h1>The Films</h1>
-			<ul class="thumbnails">
-			  <li class="span3">
-			    <div class="thumbnail">
-			      <img alt="" src="assets/img/mqdefault.png">
-			      <h3>The Killer Chef</h3>
-			      <p>Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate</p>
-			    </div>
-			  </li>
-			
-			  <li class="span3">
-			    <div class="thumbnail">
-			      <img alt="" src="assets/img/mqdefault1.png">
-			      <h3>I Know What You Did</h3>
-			      <p>Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate</p>
-			    </div>
-			  </li>
-			  
-			  <li class="span3">
-			    <div class="thumbnail">
-			      <img alt="" src="assets/img/mqdefault2.png">
-			      <h3>Dr. Strangecook</h3>
-			      <p>Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate</p>
-			    </div>
-			  </li>
-			
-			  <li class="span3">
-			    <div class="thumbnail">
-			      <img alt="" src="assets/img/mqdefault3.png">
-			      <h3>Out of Witty Titles</h3>
-			      <p>Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate</p>
-			    </div>
-			  </li>
-			 </ul>
-		</div>
-	</div>
--->
-      <!-- End Team -->  
        	
 	
       <!-- #contact -->   	
-<div class="container-fluid" id="contact" style="bottom:0px;margin-left: auto;margin-right: auto;position: fixed;width: 100%;">
+<div class="container-fluid" id="contact" style="bottom:0px;padding:30px;margin-left: auto;margin-right: auto;position: fixed;width: 100%;">
 	<div class="container dark">
 		<div style="text-align:center;"> Samad Namaad Entertainment &copy;2014</div>
 	</div>
 </div>   
 	<!-- End Contact -->  
-</div>   <!-- End Contact -->  
 	</div>
-<script>
-$(function () {
-    $(window).scroll(function(){
-    // global scroll to top button
-        if ($(this).scrollTop() > 300) {
-            $('.scrolltop').fadeIn();
-        } else {
-            $('.scrolltop').fadeOut();
-        }        
-    });
-    
-    // scroll nav
-    $('.scroller').click(function(){
-    	var section = $($(this).data("section"));
-    	var top = section.offset().top-82;
-        $("html, body").animate({ scrollTop: top }, 700);
-        return false;
-    });
 
-	    	    
-    // For the purpose of the demo this allows you to toggle the background between video and img
-    $('.toggle_video').click(function(){
-	    
-	   $('#big-video-wrap').fadeToggle();
-	   return false; 
-	    
-    });
-    
-	// BigVideo Setup
-    var BV = new $.BigVideo({useFlashForFirefox:false});
-	BV.init();
-    if (Modernizr.touch) {
-    	// fallback image for mobile devices
-        BV.show('assets/img/bg2.jpg');
-    } else {
-        BV.show('assets/video/SNEbackground2_C.mp4',
-        {ambient:true, doLoop:true, altSource:'assets/video/SNEbackground2_C.ogv'});
-    }   
-    
-            
-});
-</script>
-
-<div style="display: none;" id="big-video-control-container"><div id="big-video-control"><a href="#" id="big-video-control-play"></a><div id="big-video-control-middle"><div id="big-video-control-bar"><div id="big-video-control-bound-left"></div><div style="width: 72.8241%;" id="big-video-control-progress"></div><div class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" id="big-video-control-track"><a style="left: 72.32%;" class="ui-slider-handle ui-state-default ui-corner-all" href="#"></a></div><div id="big-video-control-bound-right"></div></div></div><div id="big-video-control-timer">0:11/0:16</div></div></div></body></html>
+</body></html>

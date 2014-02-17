@@ -1,43 +1,88 @@
 <!DOCTYPE html>
-<html class=" js no-flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head>
+<html>
+<head>
 <meta http-equiv="content-type" content="text/html; charset=windows-1252">
-    <title>SNE</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-    <meta name="description" content="Front Row Responsive One page Theme With Video Support built by Harkable.com">
-    <meta name="author" content="harkable.com"> 
+<!--
   	<script src="support_files/jquery_002.js"></script>
   	<script>window.jQuery || document.write('<script src="assets/js/jquery-1.7.2.min.js"><\/script>')</script>
     <script src="support_files/jquery-ui-1.js"></script>
     <script src="support_files/jquery.js"></script>
     <script src="support_files/video.js"></script>
     <script src="support_files/modernizr-2.js"></script>
+-->
+
+
+  	<script src="support_files/jquery_002.js"></script>
+	<script type="text/javascript" src="support_files/bootstrap.js"></script> 
+
     <link href="support_files/css.css" rel="stylesheet" type="text/css">
     <link href="support_files/css_002.css" rel="stylesheet" type="text/css">
+<!--
 	<script type="text/javascript" src="support_files/bootstrap.js"></script> 
     <script src="support_files/bigvideo.js"></script> 
+-->
     <link href="support_files/bootstrap.css" rel="stylesheet">
     <link href="support_files/bootstrap-responsive.css" rel="stylesheet">
     <link href="support_files/main.css" rel="stylesheet">    
     <link href="support_files/custom.css" rel="stylesheet">    
+    
 
   <!-- IE Fix for HTML5 Tags -->
   <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->      
-<style type="text/css">
-	#intro {
-    min-height: 600px;
-    min-width: 100%;
-    padding-top: 50px;
-    position: relative;
-    width: 100%;
-    background: url("assets/img/contact.jpg") repeat fixed 50% 0 / 100% 100% rgba(0, 0, 0, 0);
-    max-height: 600px;
-    	}
-</style>
-</head>
-<body>
 
+<style type="text/css">
+	.container-fluid {
+	    padding-left: 0px;
+	    padding-right: 0px;
+	    }
+#intro {
+	background: url(assets/img/contactbackground2.png) no-repeat center center fixed #000000;
+	background-size: 100%;
+	padding: 0px !important;
+}
+#big-video-wrap {
+    background-color: #000000;
+    }
+    
+    
+
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+.main-container {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+#intro {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#text {
+	position: absolute;
+	bottom: 0px;
+	margin: 0 auto;
+}
+
+#text {
+    bottom: 0px;
+    position: absolute;
+	background: none repeat scroll 0 0 rgba(250, 250, 250, 0.75);
+    left: 50%;
+    margin-left: -30%;
+    width: 60%;
+    margin-bottom: 86px;
+
+}
+
+</style></head>
+<body>
   <!-- Navbar -->
 	<div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
@@ -77,102 +122,36 @@
     <!-- #intro -->
 	<div class="main-container">
 		<div class="container-fluid" id="intro">	
+<!--
 		<div class="container">	
 			<div class="row span6 center">
-<!-- 			<img src="assets/img/logo.png" style="opacity:0.4; filter:alpha(opacity=40); height: 175px; position: relative; right: -350px;"/> -->
-<!-- 				<h1>SNE FILMS</h1> -->
-<!--
-				<p>Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur 
-vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, 
-ac egestas est urna sit.
-	</p>
-				<a href="#" class="btn btn-xlarge btn-purple">YouTube Page</a>
--->
+<img src="assets/img/spacer.gif" height="70"; />
 			</div>	
 		</div>
-	
-	<div style="background: none repeat scroll 0 0 rgba(250, 250, 250, 0.65);margin-left:auto;margin-right:auto;width:60%;">
-	<h4 style=" font-size: 18px;font-weight: 400;line-height: 1.4;margin-bottom: 20px;text-align:left;padding:15px;">Contact Page. <br /> <br />We can put in a contact form for sending emails. Then addresses to contact Samad&rsquo;s film endevors (phone numbers, email addresses.) We could also put in links to the restaurants. I don't know if we need a map for anything. </h4>
-	<h4 style=" font-size: 18px;font-weight: 400;line-height: 1.4;margin-bottom: 20px;text-align:left;padding:15px;">The background image is just a temp one. But put one up here as an example. I think treating it with the out of focus effect works well. I've been continuoing the black and white theme throughout. Tangierino and Koullshi pages and links in the navigation bar are the most colorful elements. I could find more places to put in the red accent color as well (the red color I'm using at the top of every page). </h4>
+-->
+	<div style="background: none repeat scroll 0 0 rgba(250, 250, 250, 0.75);margin-left:auto;margin-right:auto;width:60%;margin-top:150px;">
+	<h1 style="text-align:center;">Contact Page</h1>
+	<h4 style=" font-size: 14px;font-weight: 400;line-height: 1.4;margin-bottom: 0px;text-align:left;padding:15px 15px 0px 15px;">We could put in a map, but would be up to client as to where map should point. Restaurant? Business address of SNE?</h4>
+	<h4 style=" font-size: 14px;font-weight: 400;line-height: 1.4;margin-bottom: 0px;text-align:left;padding:15px 15px 0px 15px;">We could also put in a contact form if desired. Email address, and social media links could be entered as well.</h4>
+	<br /><br /><br />
 	</div>
-	<div><br /><br /><br /><br /><br /><br /><br /></div>
-    <!-- ends Intro -->
-    
-    	</div>
 
-     <!-- #about -->
-<!--
-<div class="container-fluid" id="about">
-		<div class="container light" style="padding:30px 30px 1px 30px  !important;">
-		<ul class="thumbnails">
-		  <li class="span4">
-		    <div class="thumbnail">
-		      <img class="focus" alt="" src="assets/img/buisnessman.png" style="height:200px;">
-		      <h3>The Buisnessman</h3>
-		    </div>
-		  </li>
-		
-		  <li class="span4">
-		    <div class="thumbnail">
-		      <img class="focus" alt="" src="assets/img/filmaker.png" style="height:200px;">
-		      <h3>The Filmmaker / Producer</h3>
-		    </div>
-		  </li>
-		  
-		  <li class="span4">
-		    <div class="thumbnail">
-		       <img class="focus" alt="" src="assets/img/chef2.png" style="height:200px;">
-		      <h3>The Chef</h3>
-		    </div>
-		  </li>
-		</ul>
-	</div>
-</div>
--->
-     <!-- ends About -->
-     
-      <!-- #team -->    
-<!--
-<div class="container-fluid" id="team">
-	<div class="container dark">
-		<h1>The Films</h1>
-			<ul class="thumbnails">
-			  <li class="span3">
-			    <div class="thumbnail">
-			      <img alt="" src="assets/img/mqdefault.png">
-			      <h3>The Killer Chef</h3>
-			      <p>Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate</p>
-			    </div>
-			  </li>
+
+	
+	<div id="text" style="background: none;">
+			    <style type="text/css">
+			#socialbar img {border:0px;}#socialbar li img {width:48px; height:48px;}#socialbar li a:hover {position:relative;top:2px;}#socialbar{padding:0px;list-style: none outside none; margin:0px; position: static;}#socialbar li {display:inline;padding-right:2px;}#socialbar{width:240px;text-align:center;}
+			    </style>
+			    <ul id="socialbar" style="float:right;">
+			        <li id="facebook"><a target="_blank" href="http://www.facebook.com/username"><img src="http://www.topproducerwebsite.com/images/site_defaults/generic/facebook.png"></a></li>
 			
-			  <li class="span3">
-			    <div class="thumbnail">
-			      <img alt="" src="assets/img/mqdefault1.png">
-			      <h3>I Know What You Did</h3>
-			      <p>Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate</p>
-			    </div>
-			  </li>
-			  
-			  <li class="span3">
-			    <div class="thumbnail">
-			      <img alt="" src="assets/img/mqdefault2.png">
-			      <h3>Dr. Strangecook</h3>
-			      <p>Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate</p>
-			    </div>
-			  </li>
+			        <li id="twitter"><a target="_blank" href="http://twitter.com/#"><img src="http://www.topproducerwebsite.com/images/site_defaults/generic/twitter.png"></a></li>
 			
-			  <li class="span3">
-			    <div class="thumbnail">
-			      <img alt="" src="assets/img/mqdefault3.png">
-			      <h3>Out of Witty Titles</h3>
-			      <p>Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate</p>
-			    </div>
-			  </li>
-			 </ul>
-		</div>
+			        <li id="linkedin"><a target="_blank" href="http://www.linkedin.com/#"><img src="http://www.topproducerwebsite.com/images/site_defaults/generic/linkedin.png"></a></li>
+			
+			        <li id="youtube"><a target="_blank" href="http://youtube.com/#"><img src="http://www.topproducerwebsite.com/images/site_defaults/generic/youtube.png"></a></li>
+			    </ul><!-- END SOCIAL MEDIA WIDGET -->
 	</div>
--->
-      <!-- End Team -->  
        	
 	
       <!-- #contact -->   	
@@ -183,47 +162,5 @@ ac egestas est urna sit.
 </div>   
 	<!-- End Contact -->  
 	</div>
-<script>
-$(function () {
-    $(window).scroll(function(){
-    // global scroll to top button
-        if ($(this).scrollTop() > 300) {
-            $('.scrolltop').fadeIn();
-        } else {
-            $('.scrolltop').fadeOut();
-        }        
-    });
-    
-    // scroll nav
-    $('.scroller').click(function(){
-    	var section = $($(this).data("section"));
-    	var top = section.offset().top-82;
-        $("html, body").animate({ scrollTop: top }, 700);
-        return false;
-    });
 
-	    	    
-    // For the purpose of the demo this allows you to toggle the background between video and img
-    $('.toggle_video').click(function(){
-	    
-	   $('#big-video-wrap').fadeToggle();
-	   return false; 
-	    
-    });
-    
-	// BigVideo Setup
-    var BV = new $.BigVideo({useFlashForFirefox:false});
-	BV.init();
-    if (Modernizr.touch) {
-    	// fallback image for mobile devices
-        BV.show('assets/img/bg2.jpg');
-    } else {
-        BV.show('assets/video/SNEbackground2_C.mp4',
-        {ambient:true, doLoop:true, altSource:'assets/video/SNEbackground2_C.ogv'});
-    }   
-    
-            
-});
-</script>
-
-<div style="display: none;" id="big-video-control-container"><div id="big-video-control"><a href="#" id="big-video-control-play"></a><div id="big-video-control-middle"><div id="big-video-control-bar"><div id="big-video-control-bound-left"></div><div style="width: 72.8241%;" id="big-video-control-progress"></div><div class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" id="big-video-control-track"><a style="left: 72.32%;" class="ui-slider-handle ui-state-default ui-corner-all" href="#"></a></div><div id="big-video-control-bound-right"></div></div></div><div id="big-video-control-timer">0:11/0:16</div></div></div></body></html>
+</body></html>

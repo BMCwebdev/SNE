@@ -1,22 +1,26 @@
 <!DOCTYPE html>
-<!-- <html class=" js no-flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head> -->
 <html>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=windows-1252">
-    <title>SNE</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-    <meta name="description" content="Front Row Responsive One page Theme With Video Support built by Harkable.com">
-    <meta name="author" content="harkable.com"> 
+<!--
   	<script src="support_files/jquery_002.js"></script>
   	<script>window.jQuery || document.write('<script src="assets/js/jquery-1.7.2.min.js"><\/script>')</script>
     <script src="support_files/jquery-ui-1.js"></script>
     <script src="support_files/jquery.js"></script>
     <script src="support_files/video.js"></script>
     <script src="support_files/modernizr-2.js"></script>
+-->
+
+
+  	<script src="support_files/jquery_002.js"></script>
+	<script type="text/javascript" src="support_files/bootstrap.js"></script> 
+
     <link href="support_files/css.css" rel="stylesheet" type="text/css">
     <link href="support_files/css_002.css" rel="stylesheet" type="text/css">
+<!--
 	<script type="text/javascript" src="support_files/bootstrap.js"></script> 
     <script src="support_files/bigvideo.js"></script> 
+-->
     <link href="support_files/bootstrap.css" rel="stylesheet">
     <link href="support_files/bootstrap-responsive.css" rel="stylesheet">
     <link href="support_files/main.css" rel="stylesheet">    
@@ -26,15 +30,55 @@
   <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->      
+
 <style type="text/css">
 	.container-fluid {
 	    padding-left: 0px;
 	    padding-right: 0px;
 	    }
 #intro {
-	background: url(assets/img/SamadBG.png) no-repeat center center fixed;
+	background: url(assets/img/SamadBG3.png) no-repeat center center fixed #000000;
 	background-size: 100%;
 }
+#big-video-wrap {
+    background-color: #000000;
+    }
+    
+    
+
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+.main-container {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+#intro {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#text {
+	position: absolute;
+	bottom: 0px;
+	margin: 0 auto;
+}
+
+#text {
+    bottom: 0px;
+    position: absolute;
+	background: none repeat scroll 0 0 rgba(250, 250, 250, 0.75);
+    left: 50%;
+    margin-left: -30%;
+    width: 60%;
+    margin-bottom: 30px;
+
+}
+
 </style></head>
 <body>
   <!-- Navbar -->
@@ -76,14 +120,15 @@
     <!-- #intro -->
 	<div class="main-container">
 		<div class="container-fluid" id="intro">	
+<!--
 		<div class="container">	
 			<div class="row span6 center">
-<!-- 			<img src="assets/img/logo.png" style="opacity:0.4; filter:alpha(opacity=40); height: 175px; position: relative; right: -350px;"/> -->
 <img src="assets/img/spacer.gif" height="70"; />
 			</div>	
 		</div>
+-->
 	
-	<div style="background: none repeat scroll 0 0 rgba(250, 250, 250, 0.75);margin-left:auto;margin-right:auto;width:60%;">
+	<div id="text" style="background: none repeat scroll 0 0 rgba(250, 250, 250, 0.75);">
 	<h4 style=" font-size: 14px;font-weight: 400;line-height: 1.4;margin-bottom: 0px;text-align:left;padding:15px 15px 0px 15px;">Samad Naamad is a Moroccan-born visual and culinary artist whose pedigree swirls together expertise in design, production, and performance.  In Boston, however, Naamad is best known for creating one of the region&rsquo;s most unique and acclaimed dining and night spots - Tangierino, and its adjacent upscale cigar &amp; Hookah lounge, Koullshi.  The businesses are a reflection of Samad Naamad&rsquo;s bold and unwincing style and his innate ability to share a love of culture in order to realize a vision of creating memorable sensory experiences.</h4>
  
 <h4 style="  font-size: 14px;font-weight: 400;line-height: 1.4;margin-bottom: 0px;text-align:left;padding:15px 15px 0px 15px;">With a life-long affinity for American film and a deep desire to challenge his artistic aspirations, Naamad left Morocco in 1988 and traveled west to the U.S. in search of life lessons that would both fuel and enrich his dreams.  Receiving a degree in Finance from the University of Massachusetts, Boston, and sharpening a business background at Morgan Stanley, he left a predictable and well-trodden path to pursue interior design and visual artistry.  As a natural progression, he drew an arc around the things closest to his soul: Art, culture, food, design and business and opened Tangierino in 2000 and Koullshi in 2008. Persevering through unthinkable obstacles, Namaad&rsquo;s business sits among Boston&rsquo;s nightlife elite.  Since 2005 and founding Samad Naamad Entertainment,  Naamad has been hard at work again charting new challenges and cultivating his passion for film production, direction and performance.</h4>
@@ -92,84 +137,10 @@
  
 <h4 style="  font-size: 14px;font-weight: 400;line-height: 1.4;margin-bottom: 0px;text-align:left;padding:15px 15px 15px 15px;">Naamad resides in Charlestown, MA.</h4>
 	</div>
-	<div><br /><br /><br /><br /><br /><br /><br /></div>
     <!-- ends Intro -->
     
     	</div>
 
-     <!-- #about -->
-<!--
-<div class="container-fluid" id="about">
-		<div class="container light" style="padding:30px 30px 1px 30px  !important;">
-		<ul class="thumbnails">
-		  <li class="span4">
-		    <div class="thumbnail">
-		      <img class="focus" alt="" src="assets/img/buisnessman.png" style="height:200px;">
-		      <h3>The Buisnessman</h3>
-		    </div>
-		  </li>
-		
-		  <li class="span4">
-		    <div class="thumbnail">
-		      <img class="focus" alt="" src="assets/img/filmaker.png" style="height:200px;">
-		      <h3>The Filmmaker / Producer</h3>
-		    </div>
-		  </li>
-		  
-		  <li class="span4">
-		    <div class="thumbnail">
-		       <img class="focus" alt="" src="assets/img/chef2.png" style="height:200px;">
-		      <h3>The Chef</h3>
-		    </div>
-		  </li>
-		</ul>
-	</div>
-</div>
--->
-     <!-- ends About -->
-     
-      <!-- #team -->    
-<!--
-<div class="container-fluid" id="team">
-	<div class="container dark">
-		<h1>The Films</h1>
-			<ul class="thumbnails">
-			  <li class="span3">
-			    <div class="thumbnail">
-			      <img alt="" src="assets/img/mqdefault.png">
-			      <h3>The Killer Chef</h3>
-			      <p>Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate</p>
-			    </div>
-			  </li>
-			
-			  <li class="span3">
-			    <div class="thumbnail">
-			      <img alt="" src="assets/img/mqdefault1.png">
-			      <h3>I Know What You Did</h3>
-			      <p>Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate</p>
-			    </div>
-			  </li>
-			  
-			  <li class="span3">
-			    <div class="thumbnail">
-			      <img alt="" src="assets/img/mqdefault2.png">
-			      <h3>Dr. Strangecook</h3>
-			      <p>Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate</p>
-			    </div>
-			  </li>
-			
-			  <li class="span3">
-			    <div class="thumbnail">
-			      <img alt="" src="assets/img/mqdefault3.png">
-			      <h3>Out of Witty Titles</h3>
-			      <p>Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate</p>
-			    </div>
-			  </li>
-			 </ul>
-		</div>
-	</div>
--->
-      <!-- End Team -->  
        	
 	
       <!-- #contact -->   	
@@ -180,47 +151,5 @@
 </div>   
 	<!-- End Contact -->  
 	</div>
-<script>
-$(function () {
-    $(window).scroll(function(){
-    // global scroll to top button
-        if ($(this).scrollTop() > 300) {
-            $('.scrolltop').fadeIn();
-        } else {
-            $('.scrolltop').fadeOut();
-        }        
-    });
-    
-    // scroll nav
-    $('.scroller').click(function(){
-    	var section = $($(this).data("section"));
-    	var top = section.offset().top-82;
-        $("html, body").animate({ scrollTop: top }, 700);
-        return false;
-    });
 
-	    	    
-    // For the purpose of the demo this allows you to toggle the background between video and img
-    $('.toggle_video').click(function(){
-	    
-	   $('#big-video-wrap').fadeToggle();
-	   return false; 
-	    
-    });
-    
-	// BigVideo Setup
-    var BV = new $.BigVideo({useFlashForFirefox:false});
-	BV.init();
-    if (Modernizr.touch) {
-    	// fallback image for mobile devices
-        BV.show('assets/img/bg2.jpg');
-    } else {
-        BV.show('assets/video/SNEbackground2_C.mp4',
-        {ambient:true, doLoop:true, altSource:'assets/video/SNEbackground2_C.ogv'});
-    }   
-    
-            
-});
-</script>
-
-<div style="display: none;" id="big-video-control-container"><div id="big-video-control"><a href="#" id="big-video-control-play"></a><div id="big-video-control-middle"><div id="big-video-control-bar"><div id="big-video-control-bound-left"></div><div style="width: 72.8241%;" id="big-video-control-progress"></div><div class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" id="big-video-control-track"><a style="left: 72.32%;" class="ui-slider-handle ui-state-default ui-corner-all" href="#"></a></div><div id="big-video-control-bound-right"></div></div></div><div id="big-video-control-timer">0:11/0:16</div></div></div></body></html>
+</body></html>

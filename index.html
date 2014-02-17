@@ -1,28 +1,29 @@
 <!DOCTYPE html>
-<html class=" js no-flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head>
 <meta http-equiv="content-type" content="text/html; charset=windows-1252">
-    <title>SNE</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-    <meta name="description" content="Front Row Responsive One page Theme With Video Support built by Harkable.com">
-    <meta name="author" content="harkable.com"> 
-  	<script src="support_files/jquery_002.js"></script>
-  	<script>window.jQuery || document.write('<script src="assets/js/jquery-1.7.2.min.js"><\/script>')</script>
-    <script src="support_files/jquery-ui-1.js"></script>
-    <script src="support_files/jquery.js"></script>
-    <script src="support_files/video.js"></script>
-    <script src="support_files/modernizr-2.js"></script>
+    <title>Samad Namaad Entertainment</title>
+<!--     <script src="support_files/video.js"></script> -->
     <link href="support_files/css.css" rel="stylesheet" type="text/css">
     <link href="support_files/css_002.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="support_files/bootstrap.js"></script> 
-    <script src="support_files/bigvideo.js"></script> 
+<!--     <script src="support_files/bigvideo.js"></script>  -->
     <link href="support_files/bootstrap.css" rel="stylesheet">
     <link href="support_files/bootstrap-responsive.css" rel="stylesheet">
     <link href="support_files/main.css" rel="stylesheet">    
+    <link href="support_files/custom.css" rel="stylesheet">    
+  	<script src="support_files/jquery_002.js"></script>
+	<script type="text/javascript" src="support_files/bootstrap.js"></script> 
+
+  <script src="support_files/video.js"></script>
+  <script>
+    videojs.options.flash.swf = "support_files/video-js.swf";
+  </script>
+
 
   <!-- IE Fix for HTML5 Tags -->
   <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->      
+
 <style type="text/css">
 
 
@@ -44,54 +45,50 @@
 	    padding-right: 0px;
 	    }
 
-/*
-	.thumbnails
-{
-     background: url(assets/img/buisnessmanbw.png);
+.main-container {
+    position: inherit;
+    }
+.main-container .container{
+        padding: 30px;
+    }
+    
+#big-video-wrap {
+    background-color: #000000;
+    }
+#video {
+    position: absolute;
+	background: none repeat scroll 0 0 #000000;
+    left: 50%;
+    margin-left: -35%;
+    width: 70%;
+    margin-top: 100px;
 }
+html {
+	background-color: #000000;
+}        
+</style>
+</head>
+<body>
 
-	.thumbnails:hover
-{
-    background: url(assets/img/buisnessman.png);
- 
-}
-	#businessman
-{
-     background: url(assets/img/buisnessmanbw.png);
-}
+<video autoplay poster="assets/img/samadposter.png" id="video">
+    <source src="support_files/SNEbackground2_C.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' >
+    <source src="support_files/SNEbackground2_C.ogv" type='video/ogg;' />
+    Video not supported.
+</video>
 
-	#businessman:hover
-{
-    background: url(assets/img/buisnessman.png);
- 
-}
-	#filmaker
-{
-     background: url(assets/img/filmakerbw.png);
-}
+<!-- RETURN TO POSTER FRAME -->
+<script>
+var vid=document.getElementById('video');
+vid.addEventListener("ended", resetVideo, false);
 
-	#filmaker:hover
-{
-    background: url(assets/img/filmaker.png);
- 
+function resetVideo() {
+    // resets the video element by resetting the source
+    this.src = this.src
 }
-	#chef
-{
-     background:  url(assets/img/chef2bw.png);
+</script>
+<!-- END RETURN TO POSTER FRAME -->   
 
-     height: 95px;
-     width: 275px; 
-     display: block;
-}
 
-	#chef:hover
-{
-    background: url(assets/img/chef2.png);
- 
-}
-*/
-</style></head>
-<body><div id="big-video-wrap"><div style="width: 1635.56px; height: 920px; display: block; top: 0px; left: -87.7778px;" height="150" width="300" class="video-js vjs-default-skin vjs-playing" id="big-video-vid"><video src="support_files/SNEbackground2_C.ogv" poster="null" autoplay="autoplay" style="position: absolute; width: 1635.56px;" id="big-video-vid_html5_api" class="vjs-tech" preload="auto" data-setup="{}" webkit-playsinline=""></video></div></div>
 
   <!-- Navbar -->
 	<div class="navbar navbar-fixed-top">
@@ -129,29 +126,16 @@
     <!-- end Navbar -->
     
     
-    <!-- #intro -->
-	<div class="main-container">
-		<div class="container-fluid" id="intro">	
-		<div class="container">	
-			<div class="row span6 center">
-<!-- 			<img src="assets/img/logo.png" style="opacity:0.4; filter:alpha(opacity=40); height: 175px; position: relative; right: -350px;"/> -->
-<!-- 				<h1>SNE FILMS</h1> -->
-<!--
-				<p>Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur 
-vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, 
-ac egestas est urna sit.
-	</p>
-				<a href="#" class="btn btn-xlarge btn-purple">YouTube Page</a>
--->
-			</div>	
-		</div>
-	</div>
-    <!-- ends Intro -->
     
     
      <!-- #about -->
-<div class="container-fluid" id="about">
-		<div class="container light" style="padding: 15px 30px 25px !important;">
+     <div style="    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    width: 100%;">
+<div class="container-fluid" id="about" style="position:relative;bottom:0px;">
+		<div class="container light" style="padding: 15px 30px 69px !important;">
 <!-- 			<h1>The Different Sides of Samad</h1> -->
 		<ul class="thumbnails">
 		  <li class="span4">
@@ -239,60 +223,19 @@ ac egestas est urna sit.
 		  </li>
 		</ul>
 	</div>
-</div>
      <!-- ends About -->
      
-      <!-- #team -->    
-<!--
-<div class="container-fluid" id="team">
-	<div class="container dark">
-		<h1>The Films</h1>
-			<ul class="thumbnails">
-			  <li class="span3">
-			    <div class="thumbnail">
-			      <img alt="" src="assets/img/mqdefault.png">
-			      <h3>The Killer Chef</h3>
-			      <p>Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate</p>
-			    </div>
-			  </li>
-			
-			  <li class="span3">
-			    <div class="thumbnail">
-			      <img alt="" src="assets/img/mqdefault1.png">
-			      <h3>I Know What You Did</h3>
-			      <p>Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate</p>
-			    </div>
-			  </li>
-			  
-			  <li class="span3">
-			    <div class="thumbnail">
-			      <img alt="" src="assets/img/mqdefault2.png">
-			      <h3>Dr. Strangecook</h3>
-			      <p>Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate</p>
-			    </div>
-			  </li>
-			
-			  <li class="span3">
-			    <div class="thumbnail">
-			      <img alt="" src="assets/img/mqdefault3.png">
-			      <h3>Out of Witty Titles</h3>
-			      <p>Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate</p>
-			    </div>
-			  </li>
-			 </ul>
-		</div>
-	</div>
--->
-      <!-- End Team -->  
        	
 	
       <!-- #contact -->   	
-<div class="container-fluid" id="contact" style="bottom:0px;margin-left: auto;margin-right: auto;position: fixed;width: 100%;">
+<div class="container-fluid" id="contact" style="padding:30px;bottom:0px;margin-left: auto;margin-right: auto;position: fixed;width: 100%;">
 	<div class="container dark">
 		<div style="text-align:center;"> Samad Namaad Entertainment &copy;2014</div>
 	</div>
-</div>   
+</div>
+</div>
 	<!-- End Contact -->  
+	</div>
 	</div>
 <script>
 $(function () {
